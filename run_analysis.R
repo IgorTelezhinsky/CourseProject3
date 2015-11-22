@@ -112,6 +112,6 @@ run_analysis<-function(work_dir,outfile="tidy_data.txt",data_dir="./RawData")
 #reads tidy data
 read_tidy<-function(filename="tidy_data.txt")
 {
-    r<-read.table("tidy_data.txt",header = TRUE)
+    r<-read.table(filename,header = TRUE)
     r
 }
