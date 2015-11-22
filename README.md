@@ -1,8 +1,7 @@
----
-title: "README file for the Course Project (Getting and Cleaning Data Class)."
-author: "Igor Telezhinsky"
-date: "2015-11-22"
----
+# README file for the Course Project (Getting and Cleaning Data Class).
+Igor Telezhinsky
+2015-11-22
+
 
 ### Introduction
 
