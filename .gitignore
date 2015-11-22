@@ -1,3 +1,7 @@
+#aux files
+*.rmd
+*.html
+
 # Raw Data Files and Archive
 RawData
 *.zip

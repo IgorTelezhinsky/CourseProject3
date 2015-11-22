@@ -26,18 +26,19 @@ A full description is available at the site where the data was originally obtain
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ###Notes on the original (raw) data 
-The original data contains two data sets: test and training raw data sets stored in several files. Each of these data set contains besides raw also processed and filtered data that is not used in the current project. The files used to obtain tidy data are:\
-\
-`README.txt`          -- general info about data set \
-`features_info.txt`   -- description variable names \
-`features.txt`        -- columns names in data files (variables) \
-`activity_labels.txt` -- activities code-name connection \
-`X_test.txt`          -- test data set \
-`y_test.txt`          -- activity codes in the test data set \
-`subject_test.txt`    -- subject (a person given a number) performing a given activity in the test data set \
-`X_train.txt`         -- training data set \
-`y_train.txt`         -- activity codes in the training data set \
-`subject_train.txt`   -- subject (a person given a number) performing a given activity in the training data set.
+The original data contains two data sets: test and training raw data sets stored in several files. Each of these data set contains besides raw also processed and filtered data that is not used in the current project. The files used to obtain tidy data are:
+
+
+1. `README.txt`          -- general info about data set
+2. `features_info.txt`   -- description variable names
+3. `features.txt`        -- columns names in data files (variables)
+4. `activity_labels.txt` -- activities code-name connection
+5. `X_test.txt`          -- test data set
+6. `y_test.txt`          -- activity codes in the test data set
+7. `subject_test.txt`    -- subject (a person given a number) performing a given activity in the test data set
+8. `X_train.txt`         -- training data set
+9. `y_train.txt`         -- activity codes in the training data set
+10. `subject_train.txt`   -- subject (a person given a number) performing a given activity in the training data set.
 
 ##Creating the tidy datafile
 
@@ -51,22 +52,22 @@ must be specified. Other variables are optional with the default values set to
 
 ###Cleaning of the data steps
 
-The `run_analysis()` function of the `run_analysis.R` script goes through the following steps: \
-1. downloads the raw data \
-2. unpacks the raw data \
-3. prepares the data set as it should be in Step 4 of the Project Task \
-    - reads activity names \
-    - reads raw data variables' names \
-    - reads test data files and introduces descriptive variable names \
-    - reads training data files and introduces descriptive variable names \
-    - gets column indeces of various *mean* and *std* quantities in raw data \
-    - selects *mean* and *std* columns from the raw data sets (test and training) and combines these data into a single data frame \
-    - introduces descriptive activity names to this data frame \
-4. melts Step 4 data set with `id=c("Activity","Subject")` \
-5. casts the molten data set and computes mean for `variables` \
-6. renames the first column to "Activity.Subject" \
-7. writes down the tidy data set.\
+The `run_analysis()` function of the `run_analysis.R` script goes through the following steps:
 
+1. downloads the raw data
+2. unpacks the raw data
+3. prepares the data set as it should be in Step 4 of the Project Task
+    - reads activity names
+    - reads raw data variables' names
+    - reads test data files and introduces descriptive variable names
+    - reads training data files and introduces descriptive variable names
+    - gets column indeces of various *mean* and *std* quantities in raw data
+    - selects *mean* and *std* columns from the raw data sets (test and training) and combines these data into a single data frame
+    - introduces descriptive activity names to this data frame
+4. melts Step 4 data set with `id=c("Activity","Subject")`
+5. casts the molten data set and computes mean for `variables`
+6. renames the first column to "Activity.Subject"
+7. writes down the tidy data set.
 
 ##Description of the variables in the tidy_data.txt (outfile)
 The file contains the tidy data set of 180 rows by 80 columns. The following summary is compiled with \
