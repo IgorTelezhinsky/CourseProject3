@@ -37,8 +37,8 @@ The `run_analysis.R` script contains four functions:
 
 1. `getRawData(data_dir)` - downloads and unpacks the raw data to `data_dir`;
 
-2. `getStep4DataSet(files)` - prepares data set as it should be after Step 4 of the Course Project Task,
-`files` is a data frame containing paths to the raw data files used for the analysis. The `files` data frame is
+2. `getStep4DataSet(data_files)` - prepares data set as it should be after Step 4 of the Course Project Task,
+`data_files` is a data frame containing paths to the raw data files used for the analysis. The `data_files` data frame is
 created within `run_analysis()` function;
 
 3. `run_analysis(work_dir,outfile="tidy_data.txt",data_dir="./RawData")` - performs actual analysis in

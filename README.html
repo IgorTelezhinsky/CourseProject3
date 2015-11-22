@@ -85,7 +85,7 @@ run_analysis(&quot;~/CleanData&quot;)</code></pre>
 <p>The <code>run_analysis.R</code> script contains four functions:</p>
 <ol style="list-style-type: decimal">
 <li><p><code>getRawData(data_dir)</code> - downloads and unpacks the raw data to <code>data_dir</code>;</p></li>
-<li><p><code>getStep4DataSet(files)</code> - prepares data set as it should be after Step 4 of the Course Project Task, <code>files</code> is a data frame containing paths to the raw data files used for the analysis. The <code>files</code> data frame is created within <code>run_analysis()</code> function;</p></li>
+<li><p><code>getStep4DataSet(data_files)</code> - prepares data set as it should be after Step 4 of the Course Project Task, <code>data_files</code> is a data frame containing paths to the raw data files used for the analysis. The <code>data_files</code> data frame is created within <code>run_analysis()</code> function;</p></li>
 <li><p><code>run_analysis(work_dir,outfile=&quot;tidy_data.txt&quot;,data_dir=&quot;./RawData&quot;)</code> - performs actual analysis in working directory specified by <code>work_dir</code> argument;</p></li>
 <li><p><code>read_tidy(filename=&quot;tidy_data.txt&quot;)</code> - reads in tidy data in to R’s data frame.</p></li>
 </ol>

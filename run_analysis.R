@@ -1,6 +1,8 @@
 #Functions implementing the course project
 #of Getting and Cleaning Data on Coursera.
 
+library(reshape2)
+
 #this function downloads and unpacks raw data if either is not yet done
 getRawData<-function(dir_name)
 {
@@ -20,7 +22,7 @@ getRawData<-function(dir_name)
 }
 
 #this function prepares data set as it should be after Step 4 of the Course Project Task.  
-getStep4DataSet<-function(files)
+getStep4DataSet<-function(data_files)
 {
     message("Reading raw data and making transformations to get Step 4 data set...")
     #reading activity names
@@ -67,7 +69,7 @@ run_analysis<-function(work_dir,outfile="tidy_data.txt",data_dir="./RawData")
     #check if working directory exists and if not create one
     if(!file.exists(work_dir))
     {
-        dir.create(work_dir)
+        dir.create(work_dir,recursive = TRUE)
     }
     
     #setting working directory
