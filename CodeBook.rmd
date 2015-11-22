@@ -70,7 +70,8 @@ The `run_analysis()` function of the `run_analysis.R` script goes through the fo
 7. writes down the tidy data set.
 
 ##Description of the variables in the tidy_data.txt (outfile)
-The file contains the tidy data set of 180 rows by 80 columns. The following summary is compiled with \
+The file contains the tidy data set of 180 rows by 80 columns. The following summary is compiled with
+
 ```{r}
 source('./run_analysis.R')
 tidy<-read_tidy("tidy_data.txt")
